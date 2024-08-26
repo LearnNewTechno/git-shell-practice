@@ -1,4 +1,4 @@
 #!/bin/bash
 
-NUM = $1
+NUM = ravi
 echo "Hellow world $NUM"
