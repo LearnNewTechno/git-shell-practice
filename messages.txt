@@ -1,0 +1,25 @@
+total 52
+drwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096    0 Aug 27 21:49 ./
+drwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096    0 Aug 27 14:18 ../
+drwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096    0 Aug 27 14:21 .git/
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096   34 Aug 27 14:18 01-helloworld.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  142 Aug 27 14:22 01-hello-world.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096   51 Aug 27 14:18 02-conversion.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  224 Aug 27 14:22 02-converstation.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  325 Aug 27 15:36 03-variables.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  270 Aug 27 14:22 04-variables.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  235 Aug 27 14:22 05-variables.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  288 Aug 27 15:37 06-array.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096   57 Aug 27 14:22 07-command-output.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  110 Aug 27 16:03 08-data-types.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  300 Aug 27 14:22 09-special-vars.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  309 Aug 27 18:34 10-conditions.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  910 Aug 27 14:22 11-installation.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  749 Aug 27 14:22 12-functions.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  800 Aug 27 14:22 13-colors.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  351 Aug 27 19:59 14-loops.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  744 Aug 27 14:22 15-loops.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096 1247 Aug 27 14:22 16-redirectors.sh*
+-rwxr-xr-x 1 ENCORA+Ravi.Amireddy 4096  580 Aug 27 21:46 17_looping.sh*
+-rw-r--r-- 1 ENCORA+Ravi.Amireddy 4096    0 Aug 27 21:49 messages.txt
+-rw-r--r-- 1 ENCORA+Ravi.Amireddy 4096   31 Aug 27 14:18 README.md
