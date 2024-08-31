@@ -25,6 +25,7 @@ fi
 if [ ! -d $SOURCE_DIR ]
 then
     echo "$SOURCE_DIR does not exist...Please check"
+    exit 1
 fi
 
 if [ ! -d $DEST_DIR ]
@@ -38,7 +39,7 @@ FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +14)
 
 echo "Files: $FILES"
 
-if [ ! -z $FILES/$1 ]
+if [ ! -z $FILES ]
 then
     echo "FIles are found"
     ZIP_FILE="$DEST_DIR/app_logs-$TIMESTAMP.zip"
