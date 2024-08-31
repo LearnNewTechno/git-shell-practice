@@ -23,7 +23,7 @@ echo "Files: $FILES"
 while IFS= read -r file
 do 
         echo "Deleting File: $file"
-done
+done <<< $FILES
 
 
 while IFS= read -r file #IFS,internal field seperatpor, empty it will ignore while space.-r is for not to ingore special charecters like /
