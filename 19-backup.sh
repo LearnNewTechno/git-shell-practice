@@ -2,7 +2,7 @@
 
 SOURCE_DIR=$1
 DEST_DIR=$2
-DAYs=${3:-14}
+DAYS=${3:-14}
 TIMESTAMP=$(date +%Y_%m_%d_%H_%M_%S)
 
 echo '-------------------'
