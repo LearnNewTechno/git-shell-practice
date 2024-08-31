@@ -52,7 +52,7 @@ then
         do  
             echo "DELETING file : $file"
             rm -rf $file
-        done <<< FILES
+        done <<< $FILES
 
     else 
         echo -e "Zipping the is $R FAILED..$N"
