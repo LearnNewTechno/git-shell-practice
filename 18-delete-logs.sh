@@ -22,6 +22,6 @@ echo "Files: $FILES"
 
 while IFS= read -r file
 do
-    echo $file
+    echo "Deleting file: $file"
 
 done <<< $FIlES
