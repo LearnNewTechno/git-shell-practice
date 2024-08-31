@@ -41,6 +41,7 @@ if [ ! -z $FILES ]
 then
     echo "FIles are found"
     ZIP_FILE="$DEST_DIR/app_logs-$TIMESTAMP.zip"
+    find ${SOURCE_DIR} -name "*.log" -mtime +$DAYS | zip "$ZIP_FILE" -@
     echo $ZIP_FILE
 
     if [ -f $ZIP_FILE ]
