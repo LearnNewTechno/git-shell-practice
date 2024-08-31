@@ -45,7 +45,7 @@ then
     echo $ZIP_FILE
 
     find ${SOURCE_DIR} -name "*.log" -mtime +14 | zip "$ZIP_FILE" -@
-    if [ -f $ZIP_FILE]
+    if [ -f $ZIP_FILE ]
     then
         echo "successfully zipped older than $DAYS"
         while IFS= read -r file
