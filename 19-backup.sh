@@ -32,19 +32,19 @@ then
     echo "$DEST_DIR does not exist...Please check"
 fi
 
-FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime "+$DAYS")
+FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime $DAYS)
 
 # FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +14)
 
 echo "Files: $FILES"
 
-if [ ! -z $FILES/$1 ]
+if [ ! -z $FILES ]
 then
     echo "FIles are found"
     ZIP_FILE="$DEST_DIR/app_logs-$TIMESTAMP.zip"
     echo $ZIP_FILE
 
-    find ${SOURCE_DIR} -name "*.log" -mtime +$DAYS | zip "$ZIP_FILE" -@
+    find ${SOURCE_DIR} -name "*.log" -mtime $DAYS | zip "$ZIP_FILE" -@
     if [ -f $ZIP_FILE]
     then
         echo "successfully zipped older than $DAYS"
