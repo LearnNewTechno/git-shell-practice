@@ -2,7 +2,7 @@
 
 SOURCE_DIR=$1
 DEST_DIR=$2
-DAYS=${3:-14}
+DAYS=${3:-3}
 TIMESTAMP=$(date +%Y_%m_%d_%H_%M_%S)
 
 echo '-------------------'
@@ -34,7 +34,7 @@ then
     exit 1
 fi
 
-FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +$DAYS)
+FILES=$(find ${SOURCE_DIR} -name "*.sh" -mtime +$DAYS)
 
 echo "Files: $FILES"
 
@@ -45,18 +45,18 @@ then
     find ${SOURCE_DIR} -name "*.log" -mtime +$DAYS | zip "$ZIP_FILE" -@
     echo $ZIP_FILE
 
-    if [ -f $ZIP_FILE ]
-    then
-        echo "successfully zipped older than $DAYS"
-        while IFS= read -r file
-        do  
-            echo "DELETING file : $file"
-            rm -rf $file
-        done <<< $FILES
+    # if [ -f $ZIP_FILE ]
+    # then
+    #     echo "successfully zipped older than $DAYS"
+    #     while IFS= read -r file
+    #     do  
+    #         echo "DELETING file : $file"
+    #         rm -rf $file
+    #     done <<< $FILES
 
-    else 
-        echo -e "Zipping the is $R FAILED..$N"
-    fi
+    # else 
+    #     echo -e "Zipping the is $R FAILED..$N"
+    # fi
 else 
     echo "No files older than $DAYS"
 fi
